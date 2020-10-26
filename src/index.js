@@ -1,17 +1,26 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom";
+import { Provider } from "react-redux";
+import { BrowserRouter as Router } from "react-router-dom";
+
+import App from "./components/app";
+import ErrorBoundry from "./components/errorBoundry";
+import NetworkService from "./services/networkService";
+import { NetworkServiceProvider } from "./components/networkServiceContext";
+
+import store from "./store";
+
+const networkService = new NetworkService();
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+  <Provider store={store}>
+    <ErrorBoundry>
+      <NetworkServiceProvider value={networkService}>
+        <Router>
+          <App />
+        </Router>
+      </NetworkServiceProvider>
+    </ErrorBoundry>
+  </Provider>,
+  document.getElementById("root")
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
