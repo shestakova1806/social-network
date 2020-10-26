@@ -1,6 +1,6 @@
 import {
   NetworkServiceProvider,
   NetworkServiceConsumer,
-} from "./networkServiceContext";
+} from "./NetworkServiceContext";
 
 export { NetworkServiceProvider, NetworkServiceConsumer };

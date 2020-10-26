@@ -1,3 +1,3 @@
-import withNetworkService from "./withNetworkService";
+import { withNetworkService } from "./withNetworkService";
 
-export default withNetworkService;
+export { withNetworkService };

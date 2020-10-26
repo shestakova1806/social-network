@@ -1,12 +1,12 @@
 import React from "react";
-import { Route, Router, Switch } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
 
-import AppHeader from "../appHeader";
+import { AppHeader } from "../AppHeader";
 import { HomePage, ProfilePage } from "../pages";
 
 import "./app.css";
 
-const App = () => {
+export const App = () => {
   return (
     <main role="main">
       <AppHeader />
@@ -17,5 +17,3 @@ const App = () => {
     </main>
   );
 };
-
-export default App;

@@ -3,10 +3,10 @@ import ReactDOM from "react-dom";
 import { Provider } from "react-redux";
 import { BrowserRouter as Router } from "react-router-dom";
 
-import App from "./components/app";
-import ErrorBoundry from "./components/errorBoundry";
-import NetworkService from "./services/networkService";
-import { NetworkServiceProvider } from "./components/networkServiceContext";
+import { App } from "./components/App";
+import { ErrorBoundry } from "./components/ErrorBoundry";
+import { NetworkService } from "./services/NetworkService";
+import { NetworkServiceProvider } from "./components/NetworkServiceContext";
 
 import store from "./store";
 

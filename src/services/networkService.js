@@ -1,4 +1,4 @@
-export default class NetworkService {
+export class NetworkService {
   getPost() {
     return [];
   }

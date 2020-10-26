@@ -1,9 +1,8 @@
 import React from "react";
-import NetworkService from "../../services/networkService";
 
 import { NetworkServiceConsumer } from "../networkServiceContext";
 
-const withNetworkService = () => (Wrapped) => {
+export const withNetworkService = () => (Wrapped) => {
   return (props) => {
     return (
       <NetworkServiceConsumer>
@@ -14,5 +13,3 @@ const withNetworkService = () => (Wrapped) => {
     );
   };
 };
-
-export default withNetworkService;

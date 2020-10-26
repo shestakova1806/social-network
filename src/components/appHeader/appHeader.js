@@ -1,7 +1,5 @@
 import React from "react";
 
-const AppHeader = () => {
+export const AppHeader = () => {
   return <p>Twitter</p>;
 };
-
-export default AppHeader;
