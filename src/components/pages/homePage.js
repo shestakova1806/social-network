@@ -1,5 +1,6 @@
 import React from "react";
+import { PostList } from "../PostList";
 
 export const HomePage = () => {
-  return <p>Posts</p>;
+  return <PostList posts={[]} />;
 };
