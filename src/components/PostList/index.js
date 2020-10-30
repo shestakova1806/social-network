@@ -1,3 +1,3 @@
-import { PostList } from "./PostList";
+import PostList from "./PostList";
 
-export { PostList };
+export default PostList;
