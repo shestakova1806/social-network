@@ -1,5 +1,6 @@
 import React from "react";
-import "./spinner.css";
+
+import "./Spinner.css";
 
 export const Spinner = () => {
   return <div>Loading...</div>;

@@ -2,7 +2,7 @@ import React, { Component } from "react";
 
 import { PostListItem } from "../PostListItem";
 
-import "./postList.css";
+import "./PostList.css";
 
 export class PostList extends Component {
   render() {
