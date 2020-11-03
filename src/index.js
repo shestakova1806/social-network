@@ -8,7 +8,7 @@ import { ErrorBoundry } from "./components/ErrorBoundry";
 import { NetworkService } from "./services/NetworkService";
 import { NetworkServiceProvider } from "./components/NetworkServiceContext";
 
-import store from "./store";
+import { store } from "./store";
 
 const networkService = new NetworkService();
 

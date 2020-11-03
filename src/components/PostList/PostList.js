@@ -5,7 +5,7 @@ import { PostListItem } from "../PostListItem";
 
 import "./PostList.css";
 
-class PostList extends Component {
+class PostListItems extends Component {
   render() {
     const { posts } = this.props;
     return (
@@ -26,4 +26,4 @@ const mapStateToProps = ({ posts }) => {
   return { posts };
 };
 
-export default connect(mapStateToProps)(PostList);
+export const PostList = connect(mapStateToProps)(PostListItems);

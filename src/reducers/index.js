@@ -2,7 +2,7 @@ const initialState = {
   posts: [],
 };
 
-const reducer = (state = initialState, action) => {
+export const reducer = (state = initialState, action) => {
   switch (action.type) {
     case "FETCH_POSTS_SUCCESS":
       return {
@@ -12,5 +12,3 @@ const reducer = (state = initialState, action) => {
       return state;
   }
 };
-
-export default reducer;
