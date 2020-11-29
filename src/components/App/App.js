@@ -8,7 +8,7 @@ import "./App.css";
 
 export const App = () => {
   return (
-    <main role="main">
+    <main role="maim" className="container">
       <AppHeader />
       <Switch>
         <Route path="/" component={HomePage} exact />
